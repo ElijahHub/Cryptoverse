@@ -1,50 +1,78 @@
-# React + TypeScript + Vite
+# **Cryptoverse 🌌**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Cryptoverse** is a sleek and interactive cryptocurrency tracking application. It provides real-time price updates, historical data, and global insights into the world of cryptocurrencies. Stay informed and make better investment decisions with beautiful visualizations and comprehensive stats.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Features** 🚀
 
-## Expanding the ESLint configuration
+- 📈 **Live Cryptocurrency Prices**  
+  Track real-time price changes for top cryptocurrencies.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- 📊 **Historical Data Charts**  
+  Visualize price trends and analyze performance over time.
 
-- Configure the top-level `parserOptions` property like this:
+- 🌍 **Global Insights**  
+  Access market caps, supply statistics, and much more.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- 💻 **Modern UI/UX**  
+  Built with React.js and Ant Design for a smooth user experience.
+
+---
+
+## **Live Demo** 🌐
+
+Check out the live version here: [Cryptoverse](https://github.com/ElijahHub/Cryptoverse.git)
+
+---
+
+## **Tech Stack** 🛠️
+
+- **Frontend**: React.js, Ant Design
+- **Charting**: Chart.js
+- **API**: Cryptocurrency data from [RapidAPI](https://rapidapi.com/)
+- **State Management**: Redux Toolkit
+
+---
+
+## **Getting Started** 📂
+
+Follow these steps to set up the project on your local machine:
+
+### **1. Clone the Repository**
+
+```bash
+git clone https://github.com/ElijahHub/Cryptoverse.git
+cd Cryptoverse
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### **2. Install Dependencies**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+### **3. Create an `.env` File**
+
+Add your API key in a new `.env` file in the root directory:
+
+### **4. Start the Development Server**
+
+```bash
+npm run dev
+```
+
+Visit `http://localhost:5173` to view the app in your browser.
+
+---
+
+## **Useful Commands** 📝
+
+| Command           | Description                          |
+| ----------------- | ------------------------------------ |
+| `npm run dev`     | Starts the development server.       |
+| `npm run build`   | Builds the app for production.       |
+| `npm run preview` | Serves the production build locally. |
+| `npm install`     | Installs all dependencies.           |
+
+---
